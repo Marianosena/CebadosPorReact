@@ -16,14 +16,12 @@ export const CarritoProvider = ({ children }) => {
     const [total, setTotal] = useState(0);
     const [cantidadTotal, setCantidadTotal] = useState(0);
 
-    //Metemos unos console.log de forma momentánea para ver que se este actualizando todo correctamente. 
     console.log(carrito);
     console.log("Monto total de la compra: ", total);
     console.log("Cantidad de items: ", cantidadTotal);
 
-    //4) Agregamos algunos métodos al proveedor de contexto para manipular el carrito de compras: 
+    
 
-    //Función agregar producto al carrito: 
 
     const agregarAlCarrito = (item, cantidad) => {
         const productoExistente = carrito.find(prod => prod.item.id === item.id);
